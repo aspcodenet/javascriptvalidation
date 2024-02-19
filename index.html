@@ -15,11 +15,23 @@
         <h3>Whatever</h3>
         <h4></h4> 
         
+<!-- Minst 5 tecken -->
+
 
       <form>
         <label for="namn">Ange namn</label>
-        <input type="text" id="namn" name="namn" placeholder="Your name" />
+        <input minlength="5" type="text" id="namn" name="namn" placeholder="Your name" />
         <span id="namnError" style="color:red">FEL!!!</span>
+
+
+        <label for="fromDate">Ange från</label>
+        <input type="date" id="fromDate"/>
+        <span id="fromDateError" style="color:red">FEL!!!</span>
+
+        <label for="toDate">Ange till</label>
+        <input type="date" id="toDate" />
+        <span id="toDateError" style="color:red">FEL!!!</span>
+
 
       </form>
 
@@ -32,7 +44,7 @@
 
 
 
-
+  <script src="https://unpkg.com/validator@latest/validator.min.js"></script>
   <script src="script.js"></script>
   </body>
 </html>
